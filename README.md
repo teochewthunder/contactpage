@@ -1,2 +1,11 @@
-# contactpage
-A basic HTML form with map and emailing functionality, and basic security measures
+# Contact Us Page (in progress)
+
+## HTML/CSS
+
+## Map
+
+## JavaScript Validation
+
+## PHP Validation
+
+## PHP Mailing
