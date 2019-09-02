@@ -12,14 +12,12 @@ $errors["email_format_incorrect"] = false;
 
 $mailsent = false;
 
-//details
 $form_email = "";
 $form_name = "";
 $form_comments = "";
 
 if (isset($_POST["btnSend"]))
 {
-	//check CSRF
 	$csrftoken = (isset($_POST["csrftoken"]) ? $_POST["csrftoken"] : "");
 
 	if ($csrftoken == session_id())
