@@ -436,7 +436,7 @@ function validateEmail($str)
 								<span>Email is required.</span>
 							</div>
 							<div class="error <?php echo $errors["email_format_incorrect"] ? "" : "hide" ?>" id="email_format_incorrect">
-								<span>Email is is in an incorrect format.</span>
+								<span>Email is in an incorrect format.</span>
 							</div>
 
 							<div class="formrow">
