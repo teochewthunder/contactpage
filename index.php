@@ -64,7 +64,7 @@ if (isset($_POST["btnSend"]))
 			$subject = "Contact request from " . sanitize($form_name);
 			$body = sanitize($form_comments);
 
-			$mailsent = mail("mail@teochewthunder.com", $subject, $body, $headers);
+			$mailsent = mail("teochewthunder@gmail.com", $subject, $body, $headers);
 
 			if ($mailsent)
 			{
@@ -99,7 +99,7 @@ function validateEmail($str)
 	if (strlen($str) < 5) return false;
 	if (strstr($str, "@") === false) return false;
 	if (strpos($str, "@") == 0 || strpos($str, "@") == strlen($str) - 1) return false;
-	if (sizeof(split($str, "@")) != 2) return false;
+	if (sizeof(explode("@", $str)) != 2) return false;
 
 	return true;
 }
