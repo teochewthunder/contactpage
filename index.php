@@ -60,11 +60,11 @@ if (isset($_POST["btnSend"]))
 			//email
 			$headers = "MIME-Version: 1.0\r\n";
 			$headers .= "Content-type:text/html;charset=UTF-8\r\n";
-			$headers .= "From: " . sanitize($form_email) . "\r\n";
+			$headers .= "From: " . $form_email . "\r\n";
 			$headers .= "X-Mailer: PHP/" . phpversion();
 
-			$subject = "Contact request from " . sanitize($form_name);
-			$body = sanitize($form_comments);
+			$subject = "Contact request from " . $form_name;
+			$body = nl2br($form_comments);
 
 			$mailsent = mail("teochewthunder@gmail.com", $subject, $body, $headers);
 
