@@ -37,10 +37,12 @@ if (isset($_POST["btnSend"]))
 		{
 			$errors["email_required"] = true;
 		}
-
-		if (!validateEmail($form_email))
+		else
 		{
-			$errors["email_format_incorrect"] = true;
+			if (!validateEmail(txtEmail.value))
+			{
+				errors.push("email_format_incorrect");
+			}					
 		}
 
 		if (str_replace(" ", "", $form_comments) == "")
@@ -372,10 +374,12 @@ function validateEmail($str)
 				{
 					errors.push("email_required");
 				}
-
-				if (!validateEmail(txtEmail.value))
+				else
 				{
-					errors.push("email_format_incorrect");
+					if (!validateEmail(txtEmail.value))
+					{
+						errors.push("email_format_incorrect");
+					}				
 				}
 
 				if (txtComments.value.replace(/\s/g, "").length == 0)
