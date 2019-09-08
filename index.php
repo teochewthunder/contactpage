@@ -48,11 +48,6 @@ if (isset($_POST["btnSend"]))
 			$errors["comments_required"] = true;
 		}		
 
-		function iserror($x)
-		{
-		    return $x == true;
-		}
-
 		if (sizeof(array_filter($errors)) == 0)
 		{
 			//email
