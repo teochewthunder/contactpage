@@ -351,10 +351,7 @@ function validateEmail($str)
 
 				for (var i = 0; i < placeholders.length; i++)
 				{
-					if (placeholders[i].className.trim() == "error")
-					{
-						placeholders[i].className = "error hide";
-					}
+					placeholders[i].className = "error hide";
 				}
 
 				var errors = [];
