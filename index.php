@@ -94,7 +94,6 @@ function validateEmail($str)
 	if (strlen($str) < 5) return false;
 	if (strstr($str, "@") === false) return false;
 	if (strpos($str, "@") == 0 || strpos($str, "@") == strlen($str) - 1) return false;
-	if (sizeof(explode("@", $str)) != 2) return false;
 
 	return true;
 }
@@ -397,7 +396,6 @@ function validateEmail($str)
 				if (str.length < 5) return false;
 				if (str.indexOf("@") == -1) return false;
 				if (str.indexOf("@") == 0 || str.indexOf("@") == str,length - 1) return false;
-				if (str.split("@").length != 2) return false;
  
 				return true;
 			}
