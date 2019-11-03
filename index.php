@@ -20,7 +20,7 @@ if (isset($_POST["btnSend"]))
 {
 	$csrftoken = (isset($_POST["csrftoken"]) ? $_POST["csrftoken"] : "");
 
-	if ($csrftoken == session_id())
+	if ($csrftoken == md5(session_id()))
 	{
 		$form_name = trim($_POST["txtName"]);
 		$form_email = trim($_POST["txtEmail"]);
@@ -440,7 +440,7 @@ function validateEmail($str)
 							</div>
 							<div class="formrow">
 								<input type="submit" id="btnSend" name="btnSend" value="Send">
-								<input type="hidden" id="csrftoken" name="csrftoken" value="<?php echo session_id(); ?>">
+								<input type="hidden" id="csrftoken" name="csrftoken" value="<?php echo md5(session_id()); ?>">
 							</div>
 						</form>
 					</div>
