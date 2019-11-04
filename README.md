@@ -13,7 +13,7 @@
   - Each placeholder has an error message.
   - If there is no PHP error associated with the input, the placeholder is hidden using the class *hide*.
 ### JavaScript Validation
-  - in the form tag, use the *onsubmit* attribute to trugger the *validateForm()* function. This basically checks that the Name, Email and Comments are not blank values, and that the Email is valid.
+  - in the form tag, use the *onsubmit* attribute to trigger the *validateForm()* function. This basically checks that the Name, Email and Comments are not blank values, and that the Email is valid.
   - Note that Email is only checked for syntatic correctness, and not *actual* validity.
   - We are not using Regular Expressions to check for valid Email because there are way too many variables.
   - In the JavaScript, set all elements with the class of *error* to *error hide*.
