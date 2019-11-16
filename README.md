@@ -31,3 +31,6 @@
   - The PHP *mail()* function is used to send the email. Note that this function only determines if the data used in the function is valid, and will return *true* if so, whether or not it actually sends the email.
   
 ## Map
+  - This is an iframe.
+  - The contents are from the Google Maps API.
+  - A Google Account is required, after which a custom map needs to be created and shared.
