@@ -455,16 +455,16 @@ function validateEmail($str)
 						</div>
 
 						<div class="cardrow icon_address">
-							123 South Dakota Avenue<br />
+							140 Cecil Street<br />
 							12-34a<br />
-							Singapore 112113
+							Singapore 069543
 						</div>
 					</div>
 
 					<br class="clear" />
 
 					<div class="mapContainer">
-						<iframe src="https://www.google.com/maps/d/embed?mid=1UzZMoKTBgihR8EkunVcLPyUjrBVV0sWV&hl=en"></iframe>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1994.410947080802!2d103.8475582!3d1.2805386!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da190d9688e047%3A0x51dfe23cf3f6846d!2sCecil%20Court!5e0!3m2!1sen!2ssg!4v1568307144640!5m2!1sen!2ssg"></iframe>
 					</div>
 				</div>
 			</div>
