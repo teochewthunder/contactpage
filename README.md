@@ -1,4 +1,4 @@
-# Contact Us Page (in progress)
+# Contact Us Page
 
 ## HTML/CSS
 ### *Form* tag
