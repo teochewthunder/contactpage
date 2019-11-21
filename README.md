@@ -34,3 +34,5 @@
   - This is an iframe.
   - The contents are from the Google Maps API.
   - A Google Account is required, after which a custom map needs to be created and shared.
+  
+  *Note:* Email format validation works as intended in Chrome and Firefox, but does not work *quite* the same in IE and Safari.
